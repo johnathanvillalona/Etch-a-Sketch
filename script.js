@@ -32,7 +32,13 @@ function addButtonEvent() {
 let button = document.querySelector("button");
 button.addEventListener("click", (e) => {
     let gridWidth = prompt("Enter grid width: (Integer)");
+    while (gridWidth > 100) {
+        gridWidth = prompt("Number is too large.(Over 100)\nEnter grid width: (Integer)")
+    }
     let gridHeight = prompt("Enter grid height: (Integer)");
+    while (gridHeight > 100) {
+        gridHeight = prompt("Number is too large.(Over 100)\nEnter grid height: (Integer)")
+    }
     clearGrid();
     let container = document.querySelector(".container");
     container.style.width = `${gridWidth*20}px`;
