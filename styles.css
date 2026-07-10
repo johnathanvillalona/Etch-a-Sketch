@@ -4,9 +4,33 @@
 
 body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     height: 100vh;
     background-color: #40826D;
     color: white;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px ;
+    background-color: white;
+    color: #40826D;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: #40826D;
+    color: white;
+    border: 2px solid white;
+} 
+
+button:active {
+    background-color: #407682;
 }
 
 .container {
@@ -14,7 +38,6 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     width: 320px;
-    margin: auto;
 }
 
 .gridSquares {
