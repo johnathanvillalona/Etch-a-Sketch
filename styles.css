@@ -1,6 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 320px;
+    margin: auto;
+}
+
 .gridSquares {
     background-color:orange;
-    border: 5px solid white;
-    width: 10px;
-    height: 10px;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
 }
