@@ -9,3 +9,12 @@ function newGrid(length, width) {
 }
 
 newGrid(16, 16);
+
+
+let sections = document.querySelectorAll(".gridSquares");
+sections.forEach((section) => {
+    section.addEventListener("mouseenter", (e) => {
+        e.target.classList.add("gridSquaresHover");
+    });
+});
+

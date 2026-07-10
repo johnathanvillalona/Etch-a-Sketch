@@ -5,6 +5,8 @@
 body {
     display: flex;
     height: 100vh;
+    background-color: #40826D;
+    color: white;
 }
 
 .container {
@@ -16,8 +18,11 @@ body {
 }
 
 .gridSquares {
-    background-color:orange;
-    border: 1px solid white;
+    background-color: white;
     width: 20px;
     height: 20px;
+}
+
+.gridSquaresHover {
+    background-color: #407682;
 }
